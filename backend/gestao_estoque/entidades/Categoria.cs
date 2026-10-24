@@ -19,6 +19,7 @@ namespace gestao_estoque.entidades
 
         [Column("descricao")]
         [MaxLength(255)]
+        [Required]
         public string Descricao { get; set; } = string.Empty;
 
         //logs
@@ -30,5 +31,9 @@ namespace gestao_estoque.entidades
         public DateTime? DataAtualizacao { get; set; }
 
         //FK`s
+        [Column("empresa_contratante_id")]
+        public int EmpresaContratanteId { get; set; }
+
+        public EmpresaContratante? EmpresaContratante { get; set; }
     }
 }

@@ -53,7 +53,10 @@ namespace gestao_estoque.entidades
         public DateTime? DataAtualizacao { get; set; }
 
         //FK`s
+        [Column("empresa_contratante_id")]
+        public int EmpresaContratanteId {get; set;}
 
+        public EmpresaContratante? EmpresaContratante {get; set;}
 
     }
 }

@@ -33,5 +33,9 @@ namespace gestao_estoque.entidades
         public DateTime? DataAtualizacao { get; set; }
 
         //FK`s
+        [Column("holding_id")]
+        public int HoldingId { get; set; }
+
+        public Holding? Holding {get; set;}
     }
 }

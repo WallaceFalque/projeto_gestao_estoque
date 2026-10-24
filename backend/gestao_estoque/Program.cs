@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? 
  throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
- builder.Services.AddDbContext<GestaoEstoqueContext>(options =>
+ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 var app = builder.Build();

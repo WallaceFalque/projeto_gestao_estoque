@@ -35,6 +35,16 @@ namespace gestao_estoque.entidades
         [Column("dados_novos", TypeName = "json")]
         public string? DadosNovos { get; set; }
 
+        //Logs
+        [Column("data_criacao")]
+        public DateTime DataCriacao { get; set; }
+
         //FK`s
+        [Column("registro_id")]
+        public int RegistroId { get; set; }
+
+        [Column("usuario_id")]
+        public int UsuarioId { get; set; }
+
     }
 }

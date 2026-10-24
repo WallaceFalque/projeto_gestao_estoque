@@ -24,5 +24,13 @@ namespace gestao_estoque.entidades
         public DateTime? DataAtualizacao { get; set; }
 
         //FK`s
+        [Column("produto_id")]
+        public int ProdutoId {get; set;}
+
+        [Column("deposito_id")]
+        public int DepositoId { get; set; }
+
+        public Produto? Produto { get; set; }
+        public Deposito? Deposito { get; set; }
     }
 }
