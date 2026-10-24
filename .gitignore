@@ -1,0 +1,81 @@
+
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Certificados e chaves privadas
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+*.cer
+
+
+**/bin/
+**/obj/
+**/out/
+**/TestResults/
+**/coverage/
+
+# Arquivos gerados pelo Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.dll
+*.exe
+
+# Publicação
+**/publish/
+**/artifacts/
+
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+**/coverage/
+
+# Gerenciadores de pacotes: manter lockfiles versionados
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+.idea/
+*.swp
+*.swo
+*~
+
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+*.log
+logs/
+tmp/
+temp/
+
+
+**/mysql-data/
+**/postgres-data/
+**/redis-data/
+**/database-data/
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+
+*.bak
+*.backup
+*.dump
+*.sql.gz
